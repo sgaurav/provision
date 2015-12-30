@@ -129,7 +129,7 @@ module Steps
     if File.exist?(file)
       # Add set -e so script fails on first error
       src = "set -e \n" + File.read(file)
-      parsed = src.gsub "${RADIODAN_CONF}", conf_dir
+      parsed = src.gsub "${MAGICX_CONF}", conf_dir
 
       tmp = Tempfile.new("provision_script_#{script_name}_#{step}")
       tmp.write parsed
