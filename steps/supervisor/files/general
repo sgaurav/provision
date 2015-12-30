@@ -1,4 +1,0 @@
-# General supervisor config
-[supervisord]
-childlogdir=/var/log
-environment=LOG_LEVEL="debug"
