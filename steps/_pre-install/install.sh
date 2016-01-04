@@ -27,14 +27,16 @@
   # apt-get update
 
 # remove unneeded stuff
-  apt-get purge -y wolfram-engine libreoffice libreoffice-* claws-mail sonic-pi scratch bluej greenfoot nodered && \
-    apt-get autoremove -y
+  apt-get purge -y wolfram-engine libreoffice libreoffice-* claws-mail sonic-pi scratch bluej greenfoot nodered
 
 #install ruby
   apt-get install ruby
+
+#clean up unmet dependencies
+    apt-get autoremove -y
   
-# upgrade remaining packages
-  # apt-get upgrade -y
+upgrade remaining packages
+  apt-get upgrade -y
 
 # update firmware
   # apt-get install -y rpi-update && rpi-update
