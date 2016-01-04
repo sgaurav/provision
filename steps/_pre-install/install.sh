@@ -33,10 +33,10 @@
   apt-get install ruby
 
 #clean up unmet dependencies
-    apt-get autoremove -y
+    # apt-get autoremove -y
   
-upgrade remaining packages
-  apt-get upgrade -y
+# upgrade remaining packages
+  # apt-get upgrade -y
 
 # update firmware
   # apt-get install -y rpi-update && rpi-update
