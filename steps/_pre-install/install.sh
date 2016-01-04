@@ -13,7 +13,7 @@
     rm -rfv /home/pi/Videos && \
     rm -rfv /home/pi/Music && \
     rm -rfv /home/pi/Documents && \
-    rm -rfv /home/pi/Templates && \
+    rm -rfv /home/pi/Templates
 
 # remove rubbish from /opt/
   # rm -rf /opt/Wolfram
@@ -24,7 +24,7 @@
   #   cat /etc/apt/sources.list.bak >> /etc/apt/sources.list
 
 # clean up distro
-  apt-get update
+  # apt-get update
 
 # remove unneeded stuff
   apt-get purge -y wolfram-engine libreoffice libreoffice-* claws-mail sonic-pi scratch bluej greenfoot nodered && \
@@ -34,7 +34,7 @@
   apt-get install ruby
   
 # upgrade remaining packages
-  apt-get upgrade -y
+  # apt-get upgrade -y
 
 # update firmware
   # apt-get install -y rpi-update && rpi-update
